@@ -1,3 +1,4 @@
+import static enigma.ZagadkowyBasen.startEnigma;
 import static puzzle.BadzJakKompilator.startPuzzle;
 
 public class Main {
@@ -6,6 +7,7 @@ public class Main {
         System.out.println("Hello World!");
 
         startPuzzle();
+        startEnigma();
 
     }
 }
