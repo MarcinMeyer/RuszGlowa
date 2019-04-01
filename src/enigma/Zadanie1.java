@@ -1,6 +1,6 @@
-package Enigma;
+package enigma;
 
-public class ZagadkowyBasen {// Strona 56 Rozdział 1
+public class Zadanie1 {  // Strona 56 Rozdział 1
 
     public static void zagadkowyBasen1() { // moje rozwiązanie
         int x = 0;
