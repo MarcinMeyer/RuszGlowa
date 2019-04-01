@@ -2,16 +2,16 @@ package puzzle;
 
 
 public class BadzJakKompilator {
-    public static void startPuzzle() { // w zadaniach imituje main
+    public static void startPuzzle() { // w zadaniach imituje main jak tester
 
-      OdtwarzaczDVD o = new OdtwarzaczDVD();
-      o.mozeNagrywac = true;
-      o.odtworzPlyteDVD();
+        Perkusja p = new Perkusja();
+        p.zagrajNaBebnie();
+        p.beben = false;
 
-      if(o.mozeNagrywac == true) {
-          o.nagrajPlyteDVD();
-      }
-
+        if(p.beben == true) {
+            p.zagrajNaBebnie();
+        }
+        p.zagrajNaTalerzach();
 
 
     }
