@@ -4,13 +4,14 @@ package puzzle;
 public class BadzJakKompilator {
     public static void startPuzzle() { // w zadaniach imituje main
 
-        Magnetofon m = new Magnetofon();
-        m.mozeNagrywac = true;
-        m.odtworzTasme();
+      OdtwarzaczDVD o = new OdtwarzaczDVD();
+      o.mozeNagrywac = true;
+      o.odtworzPlyteDVD();
 
-        if (m.mozeNagrywac == true) {
-            m.nagrajTasme();
-        }
+      if(o.mozeNagrywac == true) {
+          o.nagrajPlyteDVD();
+      }
+
 
 
     }
