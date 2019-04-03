@@ -3,36 +3,30 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println("Str 96");
+        System.out.println("Str 97");
 
-        int[] indeks = new int[4];
-        String[] wyspy = new String[4];
-        int y = 0;
-        int ref;
+        int x = 0;
+        Trojkat[] ta = new Trojkat[4];
 
-        wyspy[0] = "Bermudy";
-        wyspy[1] = "Fiji";
-        wyspy[2] = "Azory";
-        wyspy[3] = "Kozumel";
-        indeks[0] = 1;
-        indeks[1] = 3;
-        indeks[2] = 0;
-        indeks[3] = 2;
-
-
-        while (y < 4) {
-            System.out.print("wyspa = ");
-            ref = indeks[y];
-
-            System.out.println(wyspy[ref]);
-
-            y = y + 1;
-
-
+        while (x < 4) {
+            ta[x] = new Trojkat();
+            ta[x].wysokosc = (x + 1) * 2;
+            ta[x].dlugosc = x + 4;
+            ta[x].okreslPole();
+            System.out.print("Trójkąt " + x + ", pole");
+            System.out.println(" = " + ta[x].pole);
+            x = x + 1;
         }
-
-
+        int y = x;
+        x = 27;
+        Trojkat t5 = ta[2];
+        ta[2].pole = 343;
+        System.out.print("y = " + y);
+        System.out.println(", pole t5 = " + t5.pole);
 
 
     }
+
 }
+
+
