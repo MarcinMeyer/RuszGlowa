@@ -4,25 +4,26 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         System.out.println("Str 95");
-        Ksiazka[] mojeKsiazki = new Ksiazka[3];
 
-        mojeKsiazki[0] = new Ksiazka();
-        mojeKsiazki[1] = new Ksiazka();
-        mojeKsiazki[2] = new Ksiazka();
+        Hobbici[] h = new Hobbici[3];
+        int z = 0;
 
-        int x = 0;
-        mojeKsiazki[0].tytul = "Czterej koderzy i Java";
-        mojeKsiazki[1].tytul = "Java nocy letniej";
-        mojeKsiazki[2].tytul = "Java. Receptury";
-        mojeKsiazki[0].autor = "janek";
-        mojeKsiazki[1].autor = "wilhelm";
-        mojeKsiazki[2].autor = "ian";
+        while (z < 3) {
+            h[z] = new Hobbici();
+            h[z].imie = "Bilbo";
+            if(z == 1){
+                h[z].imie = "Frodo";
+            }
+            if (z == 2) {
+                h[z].imie = "Sam";
 
-        while (x <3){
-            System.out.print(mojeKsiazki[x].tytul);
-            System.out.print(", autor ");
-            System.out.println(mojeKsiazki[x].autor);
-            x = x + 1;
+            }
+            System.out.print(h[z].imie + " jest ");
+            System.out.println("dobrym imieniem dla hobbita");
+            z = z +1;
+
+
         }
+
     }
 }
