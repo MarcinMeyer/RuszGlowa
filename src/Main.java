@@ -3,27 +3,36 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println("Str 95");
+        System.out.println("Str 96");
 
-        Hobbici[] h = new Hobbici[3];
-        int z = 0;
+        int[] indeks = new int[4];
+        String[] wyspy = new String[4];
+        int y = 0;
+        int ref;
 
-        while (z < 3) {
-            h[z] = new Hobbici();
-            h[z].imie = "Bilbo";
-            if(z == 1){
-                h[z].imie = "Frodo";
-            }
-            if (z == 2) {
-                h[z].imie = "Sam";
+        wyspy[0] = "Bermudy";
+        wyspy[1] = "Fiji";
+        wyspy[2] = "Azory";
+        wyspy[3] = "Kozumel";
+        indeks[0] = 1;
+        indeks[1] = 3;
+        indeks[2] = 0;
+        indeks[3] = 2;
 
-            }
-            System.out.print(h[z].imie + " jest ");
-            System.out.println("dobrym imieniem dla hobbita");
-            z = z +1;
+
+        while (y < 4) {
+            System.out.print("wyspa = ");
+            ref = indeks[y];
+
+            System.out.println(wyspy[ref]);
+
+            y = y + 1;
 
 
         }
+
+
+
 
     }
 }
