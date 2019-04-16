@@ -3,28 +3,20 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println("Str 97");
+        System.out.println("Str 120");
 
-        int x = 0;
-        Trojkat[] ta = new Trojkat[4];
-
-        while (x < 4) {
-            ta[x] = new Trojkat();
-            ta[x].wysokosc = (x + 1) * 2;
-            ta[x].dlugosc = x + 4;
-            ta[x].okreslPole();
-            System.out.print("Trójkąt " + x + ", pole");
-            System.out.println(" = " + ta[x].pole);
-            x = x + 1;
-        }
-        int y = x;
-        x = 27;
-        Trojkat t5 = ta[2];
-        ta[2].pole = 343;
-        System.out.print("y = " + y);
-        System.out.println(", pole t5 = " + t5.pole);
+        int org = 42;
+        Main x = new Main();
+        int y = x.jazda(org);
+        System.out.println(org + " " + y);
 
 
+
+
+    }
+    int jazda(int arg) {
+        arg = arg *2;
+        return arg;
     }
 
 }
